@@ -1,0 +1,22 @@
+<html>
+<body>
+<table border="1" style="border-collapse: collapse">
+    <thead>
+        <tr>
+            <th colspan="5">検索日>{{datenow}}</th>
+        </tr>
+    </thead>
+    <tbody>
+    	
+    	{% for item in items %}
+        <tr>
+            <td>{{item.channel}}</td>
+            <td><a href="{{item.url}}" target="_blank" rel="noopener noreferrer" >{{item.title}}</a></td>
+            <td>{{item.views}}</td>
+            <td>{{item.befora}}</td>
+            <td>{{item.url}}</td>
+    	<tr/>	
+        {% endfor %}
+       
+    </tbody>
+</table>
